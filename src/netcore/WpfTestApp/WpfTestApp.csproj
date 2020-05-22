@@ -4,6 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
+    <IsPackable>false</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,5 +14,7 @@
   <ItemGroup>
     <ProjectReference Include="..\WpfExtras\WpfExtras.csproj" />
   </ItemGroup>
+
+  
 
 </Project>

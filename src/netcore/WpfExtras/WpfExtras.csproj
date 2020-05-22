@@ -1,14 +1,29 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PackageId>WpfExtras</PackageId>
+    <Authors>Matthes Koch</Authors>
+    <Version>1.0.1</Version>
+    <PackageProjectUrl>https://simnopt.net</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/OpResCodes/WpfExtras</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageTags>WPF</PackageTags>
+    <Description>
+      WPF Colors,Resources and Controls that I typically include in WPF projects
+    </Description>
+      <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>    
-  </PropertyGroup>
-
-  <PropertyGroup>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageIcon>icon.png</PackageIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
   
 </Project>
