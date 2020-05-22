@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:xtra="http://simnopt.net"
         xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
+        xmlns:wpftestapp="clr-namespace:WpfTestApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
 
@@ -36,6 +37,6 @@
                                Fill="{StaticResource Metro_Orange}"
                                Height="100"
                                Margin="5" />
-
+        <wpftestapp:Display1 Margin="10"/>
     </WrapPanel>
 </Window>
