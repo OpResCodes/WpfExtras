@@ -10,7 +10,8 @@
                 <ResourceDictionary Source="/WpfExtras;component/Icons.xaml" />
                 <ResourceDictionary Source="/WpfExtras;component/MiscColors.xaml" />
                 <ResourceDictionary Source="/WpfExtras;component/MetroColors.xaml"/>
-			</ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/WpfExtras;component/ButtonStyles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
 		</ResourceDictionary>
          
     </Application.Resources>

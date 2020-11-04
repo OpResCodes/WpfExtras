@@ -38,5 +38,8 @@
                                Height="100"
                                Margin="5" />
         <wpftestapp:Display1 Margin="10"/>
+        <Button Style="{StaticResource RainbowButton}" Content="Rainbow" Width="120" Height="40"
+                Margin="25"
+                Foreground="AliceBlue"/>
     </WrapPanel>
 </Window>
