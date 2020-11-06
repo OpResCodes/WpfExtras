@@ -3,7 +3,7 @@
   <PropertyGroup>
     <PackageId>WpfExtras</PackageId>
     <Authors>Matthes Koch</Authors>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
     <PackageProjectUrl>https://simnopt.net</PackageProjectUrl>
     <RepositoryUrl>https://github.com/OpResCodes/WpfExtras</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
