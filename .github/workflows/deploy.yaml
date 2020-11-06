@@ -9,17 +9,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v1
     - name: Setup .NET core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '3.1.100' 
-  deploy:
-    needs: build
-    runs-on: windows-latest
-    steps:
-      - uses: actions/checkout@v1
-      - name: Pack nuget Package
-        run: dotnet pack -c Release 
-      - name: Push package to Nuget
-        run: dotnet nuget push -s http://baget.simnopt.net/v3/index.json -k ${{ secrets.NUGET_DEPLOY_KEY }} **/*.nupkg 
+        dotnet-version: 3.1.402 
+    - name: Build the solution
+      run:
+        dotnet build src/netcore/WpfExtras/WpfExtras.csproj --configuration Release
+    - name: Create Nuget Package
+      run:
+        dotnet pack src/netcore/WpfExtras/WpfExtras.csproj --configuration Release -o out
+    - name: Publish Nuget Package
+      run:
+        dotnet nuget push -s http://baget.simnopt.net/v3/index.json -k ${{ secrets.NUGET_DEPLOY_KEY }} out/*.nupkg 
