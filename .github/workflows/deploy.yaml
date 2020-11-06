@@ -19,7 +19,7 @@ jobs:
         dotnet build src/netcore/WpfExtras/WpfExtras.csproj --configuration Release
     - name: Create Nuget Package
       run:
-        dotnet pack src/netcore/WpfExtras/WpfExtras.csproj --configuration Release -o out
+        dotnet pack src/netcore/WpfExtras/WpfExtras.csproj --configuration Release
     - name: Publish Nuget Package
       run:
         dotnet nuget push **/*.nupkg -s http://baget.simnopt.net/v3/index.json -k ${{ secrets.NUGET_DEPLOY_KEY }}  
